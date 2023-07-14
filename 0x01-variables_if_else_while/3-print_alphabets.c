@@ -8,9 +8,9 @@
 
 int main(void)
 {
-	char latter;
+	char letter;
 
-	for (latter = 'a'; latter <= 'z'; latter++)
+	for (letter = 'a'; letter <= 'z'; letter++)
 		putchar(letter);
 
 	for (letter = 'A'; letter <= 'Z'; letter++)
