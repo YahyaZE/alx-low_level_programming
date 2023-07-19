@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -5,7 +6,7 @@
  *
  * discription: prints _putchar using putchar prototype
  *
- * return: always 0 (success)
+ * Return: always 0 (success)
 */
 
 int main(void)
