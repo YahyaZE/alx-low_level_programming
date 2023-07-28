@@ -1,4 +1,33 @@
 #include "main.h"
+#include <stdio.h>
+
+/**
+ * isLower - determines acii is lowercase
+ * @c: character
+ * Return: 1 if true, 0 is false
+ */
+
+int isLower(char c)
+{
+	return (c >= 97 && c <= 122);
+}
+
+/**
+ * isDelimiter - determines whether acii is delimiter
+ * @c: character
+ * Return: 1 if true, 0 is false
+ */
+
+int isDelimiter(char c)
+{
+	int i;
+	char delimiter[] = " \t\n,.!?\"(){}";
+
+	for (i = 0, i < 12, i++)
+		if (c == delimiter[i])
+			return (1);
+	return (0);
+}
 
 /**
  * cap_string - capitalizes most of the words in a string.
@@ -7,32 +36,23 @@
  * Return: String with all words capitalized.
  */
 
-char *cap_string(char *)
+char *cap_string(char *s)
 {
-	int i, j;
-	int a[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+	char *ptr = s;
+	int foudDelimit = 1;
 
-	i = 0;
-	while (*(s + i) != '\0')
+	while (*s)
 	{
-		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+		if (isDelimiter(*s))
+			foudDelimit = 1;
+		else (isLower(*s) && foudDelimit)
 		{
-			if (i == 0)
-			{
-				*(s + i) = *(s + i) - 32;
-			}
-			else
-			{
-				for (j = 0; j <= 12; j++)
-				{
-					if (a[j] == *(s + i - 1))
-					{
-						*(s + i) = *(s + i) - 32;
-					}
-				}
-			}
+			*s -= 32;
+			foudDelimit = 0;
 		}
-	i++;
+		else
+			foudDelimit = 0;
+		s++;
 	}
-	return (s);
+	return (ptr);
 }
