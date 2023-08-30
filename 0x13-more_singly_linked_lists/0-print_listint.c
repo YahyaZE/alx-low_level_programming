@@ -1,8 +1,11 @@
 #include "lists.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 
 /**
  * print_listint - prints all the elements of a listint_t list.
- * @h: head of linklist node
+ * @h: linked list of type listint_t to print
  * Return: the number of nodes
  */
 
