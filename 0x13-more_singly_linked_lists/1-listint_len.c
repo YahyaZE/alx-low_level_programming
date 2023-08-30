@@ -3,7 +3,7 @@
 /**
  * listint_len - returns the number of elements in a linked lists
  * @h: linked list of type listint_t to traverse
- * Return: number of nodes
+ * Return: the address of the new element, or NULL if it failed
  */
 
 size_t listint_len(const listint_t *h)
