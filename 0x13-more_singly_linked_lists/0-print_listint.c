@@ -1,9 +1,4 @@
 #include "lists.h"
-#include <stdio.h>
-#include <stdib.h>
-#include <ctype.h>
-#include <string.h>
-#include <stdbool.h>
 
 /**
  * print_listint - prints all the elements of a listint_t list.
@@ -21,5 +16,5 @@ size_t print_listint(const listint_t *h)
 		node++;
 		h = h->next;
 	}
-	return (nod);
+	return (node);
 }
