@@ -1,7 +1,8 @@
 #include "lists.h"
-#include <stdlib.h>
+#include <stdib.h>
+#include <ctype.h>
 #include <string.h>
-#include <stdio.h>
+#include <stdbool.h>
 
 /**
  * free_listp2 - frees a linked list
@@ -9,7 +10,6 @@
  *
  * Return: no return.
  */
-
 void free_listp2(listp_t **head)
 {
 	listp_t *temp;
