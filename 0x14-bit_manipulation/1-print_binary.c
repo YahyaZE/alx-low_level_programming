@@ -1,16 +1,9 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdib.h>
-#include <ctype.h>
-#include <string.h>
-#include <stdbool.h>
-#include <unistd.h>
-#include <limits.h>
 
 /**
  * print_binary - print an unsigned int in binary
- *
- * @n:
+ * @n: binary
  *
  * Return: void
  */
