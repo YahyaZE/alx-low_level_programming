@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdib.h>
 
 /**
  * get_bit - returns the value of a bit at a given index
